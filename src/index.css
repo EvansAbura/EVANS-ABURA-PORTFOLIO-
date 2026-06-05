@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@450;550;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Base resets for gorgeous professional visual layout */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+pre, code, .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Glass card styling from the Professional Polish theme */
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+.dark .glass-card {
+  background: rgba(12, 19, 34, 0.9);
+  border: 1px solid rgba(51, 65, 85, 0.45);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* Accent blue */
+.accent-blue {
+  color: #1e40af;
+}
+.dark .accent-blue {
+  color: #3b82f6;
+}
+
+.bg-accent-blue {
+  background-color: #1e40af;
+}
+.dark .bg-accent-blue {
+  background-color: #2563eb;
+}
+
+.text-micro {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.skill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+/* Custom print styles to support Evans' CV printing perfectly */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, button, nav, #theme-toggle-desktop, #theme-toggle-mobile, .print\:hidden {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
