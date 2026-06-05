@@ -64,7 +64,11 @@ export const projectsData: Project[] = [
     ],
     role: "Lead Field Research Assistant & Data Verifier",
     outcome: "Successfully surveyed and validated a target cohort of participants, yielding a 98% data completeness score and delivering insights that reinforced localized policy-support frameworks.",
-    year: "2024"
+    year: "2024",
+    problemStatement: "Evaluating complex reproductive health and socioeconomic indicators in rural and marginalized Kenyan communities was plagued by slow, paper-based surveys. This caused lag times of up to 4 months in policy reporting, directly delaying critical healthcare funding allocations.",
+    solutionImplemented: "Introduced a modernized paperless survey matrix using KoboToolbox with robust, client-side conditional verification logic, paired with an automated data cleanup pipeline built with Python and Pandas to analyze multivariable health indices.",
+    challengesFaced: "Extremely unreliable cellular coverage in remote field areas threatened real-time database syncing. Overcame this by engineering offline-cached local configurations, allowing survey agents to capture hundreds of responses securely in buffering queues.",
+    measurableImpact: "Achieved a 98% data completeness score and slashed report turnaround times from 120 days down to a staggering 48 hours, empowering CARE International program leads to implement targeted field initiatives instantly."
   },
   {
     id: "quantum-guardian",
@@ -81,7 +85,11 @@ export const projectsData: Project[] = [
     ],
     role: "Lead Software Architect & Network Cryptographer",
     outcome: "Awarded Excellent Mark. Project effectively demonstrated structural mitigation of man-in-the-middle attacks, rendering direct insights into quantum-secure data routing capabilities.",
-    year: "2025"
+    year: "2025",
+    problemStatement: "As standard asymmetric cryptosystems face looming obsolescence from future quantum decryption capabilities, network operators lacked comprehensive, practical software tools to visualize or test real-world Quantum Key Distribution (QKD) handshakes.",
+    solutionImplemented: "Engineered a high-fidelity web simulation engine modeled after the live BB84 Protocol. Built a dynamic dashboard showcasing photon polarization bases alongside an automated eavesdropping checker connected to an SQLite transaction ledger.",
+    challengesFaced: "Accurately representing chaotic quantum state collapses and bases measurement mismatches in a standard deterministic web-assembly runner without causing interface hanging.",
+    measurableImpact: "Demonstrated a 100% intercept rate against simulated Man-in-the-Middle (MITM) attacks. Honored with an Outstanding Capstone Award at the Technical University of Kenya for networking innovations."
   },
   {
     id: "data-analytics-dashboard",
@@ -98,7 +106,11 @@ export const projectsData: Project[] = [
     ],
     role: "Freelance Analytics Consultant & Dashboard Architect",
     outcome: "Provided key decision-makers with live access to operational indicators, directly optimizing supply-chain resource allocations and improving sales forecast precision by 24%.",
-    year: "2024"
+    year: "2024",
+    problemStatement: "A regional enterprise logger was suffering from high operational blind spots due to legacy tracking practices. Sales and stock logs were scattered across hundreds of disconnected Excel files, requiring days of manual merging to generate static summaries.",
+    solutionImplemented: "Constructed a unified, real-time relational star-schema data model in Power BI. Consolidated the legacy databases using advanced Power Query pipelines and built dynamic DAX filters to isolate key performance indicators on command.",
+    challengesFaced: "Merging overlapping date formats, duplicate shipping records, and inconsistent currency representations spanning back five years without inflating runtime memory usage.",
+    measurableImpact: "Cut down manual management reporting labor by over 80%. Optimized transport logistics vectors, lifting operational forecasting confidence by 24% for regional stakeholders."
   },
   {
     id: "network-optimization-system",
@@ -115,7 +127,11 @@ export const projectsData: Project[] = [
     ],
     role: "Network Security & Hardware Specialist",
     outcome: "Reduced internal packet latency spikes by 45% and established a fully redundant network architecture, achieving uninterrupted network availability of 99.9%.",
-    year: "2023"
+    year: "2023",
+    problemStatement: "An office layout with over 80 endpoints faced recurring system crashes, broadcast loops, and high packet loss rates, resulting in frequent video conference disconnections and severe internal database latency spikes.",
+    solutionImplemented: "Audited network logs via Wireshark and restructured the corporate Cisco topology. Designed logical VLAN segmentations, implemented Rapid Spanning Tree (RSTP) guards, and optimized QoS queues prioritizing critical system channels.",
+    challengesFaced: "Deploying a complete network overhaul and executing firmware flashing across critical core switches with strict boundaries to avoid interrupting daily logistics transactions.",
+    measurableImpact: "Packet loss spikes fell to 0% and internal ping times slashed by 45%. Established a dual-WAN hot-standby failover architecture, securing a proud 99.9% uptime record."
   },
   {
     id: "ai-search-optimization-seo",
@@ -132,7 +148,11 @@ export const projectsData: Project[] = [
     ],
     role: "Lead AI Search Visibility & SEO Strategist",
     outcome: "Boosted conversational search visibility across AI platform test suites by 140% and improved Google-sourced client acquisitions count by 65%.",
-    year: "2025"
+    year: "2025",
+    problemStatement: "A fast-scaling consulting brand reported a steep drop in general organic web clicks as prospective clients increasingly bypassed traditional Google keyword searches in favor of direct AI summaries.",
+    solutionImplemented: "Pioneered a custom Generative Engine Optimization (GEO) framework. Layered deep, structured JSON-LD entity graph markups to link the brand to verified industry networks, designed precise Q&A snippets, and enhanced loading benchmarks.",
+    challengesFaced: "AI model search strategies are dynamic and non-deterministic, requiring continuous experimental testing and tracking to identify citations drivers.",
+    measurableImpact: "Drove a 140% surge in branded citations across ChatGPT, Perplexity, and Gemini search suites, increasing inbound professional leads by a stellar 65%."
   }
 ];
 

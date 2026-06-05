@@ -9,6 +9,10 @@ export interface Project {
   role: string;
   outcome: string;
   year: string;
+  problemStatement?: string;
+  solutionImplemented?: string;
+  challengesFaced?: string;
+  measurableImpact?: string;
 }
 
 export interface Experience {

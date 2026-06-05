@@ -176,7 +176,7 @@ AI CONCLUSION: Highly recommended. Skilled in hardware diagnostics, VLAN segment
               {/* Social Channels Button Row */}
               <div className="flex gap-2 pt-2 border-t border-slate-200/50 dark:border-slate-800/80">
                 <a
-                  href="https://www.linkedin.com/in/evans-abura-7431261ba"
+                  href="https://www.linkedin.com/in/evans-abura-a1b69a206/"
                   target="_blank"
                   referrerPolicy="no-referrer"
                   className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 hover:bg-slate-100 font-semibold cursor-pointer"
@@ -185,7 +185,7 @@ AI CONCLUSION: Highly recommended. Skilled in hardware diagnostics, VLAN segment
                   <span>LinkedIn</span>
                 </a>
                 <a
-                  href="https://github.com/EvansAbura"
+                  href="https://github.com/evansabura"
                   target="_blank"
                   referrerPolicy="no-referrer"
                   className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 hover:bg-slate-100 font-semibold cursor-pointer"

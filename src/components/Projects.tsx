@@ -170,44 +170,93 @@ export default function Projects() {
 
                 {/* Extended Description */}
                 <div>
-                  <h4 className="font-display font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wider mb-2 font-mono text-blue-600">
-                    General Scope
+                  <h4 className="font-display font-bold text-slate-400 text-[10px] uppercase tracking-wider mb-1 font-mono">
+                    Case Summary
                   </h4>
                   <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
                     {selectedProject.description}
                   </p>
                 </div>
 
+                {/* Problem Statement */}
+                {selectedProject.problemStatement && (
+                  <div className="p-4 bg-red-50/40 dark:bg-red-950/10 border border-red-100/60 dark:border-red-900/30 rounded-2xl">
+                    <h4 className="font-display font-bold text-red-700 dark:text-red-400 text-xs uppercase tracking-wider font-mono mb-1.5 flex items-center">
+                      <span className="w-1.5 h-1.5 rounded-full bg-red-500 mr-2" />
+                      Problem Statement
+                    </h4>
+                    <p className="text-slate-700 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      {selectedProject.problemStatement}
+                    </p>
+                  </div>
+                )}
+
+                {/* Solution Implemented */}
+                {selectedProject.solutionImplemented && (
+                  <div className="p-4 bg-blue-50/40 dark:bg-blue-950/10 border border-blue-100/60 dark:border-blue-900/30 rounded-2xl">
+                    <h4 className="font-display font-bold text-blue-700 dark:text-blue-400 text-xs uppercase tracking-wider font-mono mb-1.5 flex items-center">
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2" />
+                      Solution Implemented
+                    </h4>
+                    <p className="text-slate-700 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      {selectedProject.solutionImplemented}
+                    </p>
+                  </div>
+                )}
+
                 {/* Key Deliverables & Actions */}
                 <div className="space-y-3">
-                  <h4 className="font-display font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wider font-mono text-blue-600">
-                    Surgical Action Plan
+                  <h4 className="font-display font-bold text-slate-900 dark:text-white text-xs uppercase tracking-wider font-mono text-blue-600 dark:text-blue-400 flex items-center">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400 mr-2" />
+                    Key Implementations
                   </h4>
-                  <ul className="space-y-2.5">
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {selectedProject.keyFeatures.map((ft, idx) => (
-                      <li key={idx} className="flex items-start text-xs sm:text-sm text-slate-600 dark:text-slate-300">
-                        <Check className="w-4 h-4 text-green-500 shrink-0 mt-0.5 mr-2.5" />
+                      <li key={idx} className="flex items-start text-xs text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-slate-100 dark:border-slate-800/60">
+                        <Check className="w-3.5 h-3.5 text-green-500 shrink-0 mt-0.5 mr-2" />
                         <span>{ft}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                {/* Practical Outcomes */}
-                <div className="p-4 bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-800/40 rounded-2xl">
-                  <h4 className="font-display font-bold text-emerald-800 dark:text-emerald-400 text-xs uppercase tracking-wider font-mono flex items-center mb-1.5">
-                    <CheckCircle className="w-4 h-4 mr-1.5 text-emerald-500" />
-                    Tangible Outcome
-                  </h4>
-                  <p className="text-emerald-900 dark:text-emerald-300 text-xs sm:text-sm leading-relaxed">
-                    {selectedProject.outcome}
-                  </p>
-                </div>
+                {/* Challenges Faced */}
+                {selectedProject.challengesFaced && (
+                  <div className="p-4 bg-amber-50/40 dark:bg-amber-950/10 border border-amber-100/60 dark:border-amber-900/30 rounded-2xl">
+                    <h4 className="font-display font-bold text-amber-700 dark:text-amber-400 text-xs uppercase tracking-wider font-mono mb-1.5 flex items-center">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mr-2" />
+                      Challenges Faced & Mitigations
+                    </h4>
+                    <p className="text-slate-700 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      {selectedProject.challengesFaced}
+                    </p>
+                  </div>
+                )}
+
+                {/* Measurable Results / Impact */}
+                {(selectedProject.measurableImpact || selectedProject.outcome) && (
+                  <div className="p-4.5 bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-150 dark:border-emerald-800/40 rounded-2xl">
+                    <h4 className="font-display font-bold text-emerald-800 dark:text-emerald-400 text-xs uppercase tracking-wider font-mono flex items-center mb-2">
+                      <CheckCircle className="w-4 h-4 mr-1.5 text-emerald-500" />
+                      Measurable Results & Impact
+                    </h4>
+                    <div className="space-y-2">
+                      {selectedProject.measurableImpact && (
+                        <p className="text-emerald-950 dark:text-emerald-300 text-xs sm:text-sm font-medium leading-relaxed">
+                          {selectedProject.measurableImpact}
+                        </p>
+                      )}
+                      <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed italic border-t border-emerald-100/50 dark:border-emerald-950/40 pt-1.5">
+                        <span className="font-semibold text-emerald-700 dark:text-emerald-500 not-italic">Outcome Summary:</span> {selectedProject.outcome}
+                      </p>
+                    </div>
+                  </div>
+                )}
 
                 {/* Technologies List */}
                 <div>
                   <h4 className="font-display font-bold text-slate-400 text-[10px] uppercase tracking-wider font-mono mb-2">
-                    Indexed Skill Tags
+                    Technologies Used & Technical Proficiencies
                   </h4>
                   <div className="flex flex-wrap gap-1.5">
                     {selectedProject.tags.map((tag, idx) => (

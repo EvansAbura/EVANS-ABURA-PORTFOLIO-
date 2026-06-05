@@ -107,52 +107,32 @@ export default function Hero({ onOpenCvModal }: HeroProps) {
 
           {/* Hero Mockup Representation */}
           <div className="lg:col-span-5 relative">
-            <div className="relative mx-auto max-w-[360px] sm:max-w-[420px] aspect-[4/5] bg-gradient-to-b from-blue-50 to-white dark:from-slate-800/50 dark:to-slate-900/50 rounded-3xl p-4 border border-slate-200/60 dark:border-slate-800 shadow-xl relative overflow-hidden group">
+            <div className="relative mx-auto max-w-[360px] sm:max-w-[420px] aspect-[4/5] bg-gradient-to-b from-blue-50 to-white dark:from-slate-800/50 dark:to-slate-900/50 rounded-3xl p-3 border border-slate-200/60 dark:border-slate-800 shadow-xl relative overflow-hidden group">
               
-              {/* Abstract decorative graphic representing Data networks & Artificial Intelligences */}
-              <div className="absolute inset-0 bg-[#0c1322] flex items-center justify-center p-8 z-0">
+              {/* Professional portrait image with tech overlays */}
+              <div className="absolute inset-0 z-0">
+                <img
+                  src="/src/assets/images/evans_portrait_1780654631283.png"
+                  alt="Evans Abura Ojuang'"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
                 
-                {/* Embedded SVG Vector illustration showing connectivity */}
-                <svg className="w-full h-full text-blue-500/15" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Concentric diagnostic lines */}
-                  <circle cx="200" cy="200" r="140" stroke="currentColor" strokeWidth="1" strokeDasharray="6 6" />
-                  <circle cx="200" cy="200" r="90" stroke="currentColor" strokeWidth="1" />
-                  <circle cx="200" cy="200" r="40" stroke="currentColor" strokeWidth="1" strokeDasharray="2 4" />
-                  
-                  {/* Connective nodes */}
-                  <line x1="200" y1="200" x2="80" y2="100" stroke="currentColor" strokeWidth="1.5" />
-                  <line x1="200" y1="200" x2="320" y2="120" stroke="currentColor" strokeWidth="1.5" />
-                  <line x1="200" y1="200" x2="100" y2="300" stroke="currentColor" strokeWidth="1.5" />
-                  <line x1="200" y1="200" x2="290" y2="310" stroke="currentColor" strokeWidth="1.5" />
-                  <line x1="200" y1="200" x2="200" y2="420" stroke="currentColor" strokeWidth="1.5" />
-                  
-                  {/* Interactive node pulses */}
-                  <circle cx="200" cy="200" r="10" fill="#2563eb" className="animate-ping" style={{ transformOrigin: "200px 200px" }} />
-                  <circle cx="200" cy="200" r="6" fill="#3b82f6" />
-                  
-                  <circle cx="80" cy="100" r="8" fill="#10b981" />
-                  <circle cx="320" cy="120" r="12" fill="#2563eb" fillOpacity="0.4" />
-                  <circle cx="320" cy="120" r="6" fill="#1d4ed8" />
-                  <circle cx="101" cy="300" r="7" fill="#84cc16" />
-                  <circle cx="290" cy="310" r="10" fill="#06b6d4" />
-                  <circle cx="200" cy="420" r="9" fill="#f59e0b" />
-                  
-                  {/* Mesh code annotations */}
-                  <text x="50" y="70" fill="#3b82f6" className="font-mono text-[10px] font-bold">DATA_ANALYSIS_OK</text>
-                  <text x="280" y="95" fill="#10b981" className="font-mono text-[10px] font-bold">AEO_LLMO_INDEX</text>
-                  <text x="20" y="330" fill="#84cc16" className="font-mono text-[10px] font-bold">CISCO_CORE_READY</text>
-                  <text x="260" y="350" fill="#06b6d4" className="font-mono text-[10px] font-bold">SQL_DB_STABLE</text>
-                  <text x="145" y="450" fill="#f59e0b" className="font-mono text-[10px] font-bold">B.TECH_NETWORKS</text>
-                </svg>
+                {/* Elegant overlay gradient to make text highly legible */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-slate-950/10 z-10" />
+              </div>
 
+              {/* Functional Cyber elements representing Data, Security and Digital Analytics */}
+              <div className="absolute inset-0 z-20 pointer-events-none p-5 flex flex-col justify-between">
+                
                 {/* Cyber HUD Overlap */}
-                <div className="absolute inset-x-4 top-4 flex justify-between items-center font-mono text-[9px] text-blue-400">
+                <div className="flex justify-between items-center font-mono text-[9px] text-blue-300 bg-slate-950/60 backdrop-blur-sm px-2.5 py-1 rounded-lg border border-slate-800">
                   <span>ID: EVANS_ABURA_OJUANG</span>
-                  <span className="animate-pulse">● SIGNAL_ONLINE_254</span>
+                  <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" /> SIGNAL_ONLINE_254</span>
                 </div>
 
                 {/* Floating metrics report card */}
-                <div className="absolute bottom-6 left-6 right-6 bg-slate-900/90 backdrop-blur-md border border-slate-700/60 p-4 rounded-xl text-left space-y-2">
+                <div className="bg-slate-950/85 backdrop-blur-md border border-slate-800 p-4 rounded-xl text-left space-y-2">
                   <div className="flex items-center space-x-2 text-blue-400">
                     <Database className="w-4 h-4" />
                     <span className="font-mono text-[11px] font-semibold uppercase tracking-wider">Consulting Identity Profile</span>
@@ -161,17 +141,17 @@ export default function Hero({ onOpenCvModal }: HeroProps) {
                   <p className="text-slate-400 text-xs line-clamp-2">
                     Nairobi-based Data Analyst & Research Consultant. Maximizing accuracy, transparency, and search viability across sectors.
                   </p>
-                  <div className="flex gap-1.5 pt-1">
-                    <span className="text-[10px] px-2 py-0.5 rounded bg-blue-900/50 border border-blue-700/60 font-mono text-blue-300">Data Analytics</span>
-                    <span className="text-[10px] px-2 py-0.5 rounded bg-cyan-900/50 border border-cyan-700/60 font-mono text-cyan-300">AEO / GEO</span>
-                    <span className="text-[10px] px-2 py-0.5 rounded bg-indigo-900/50 border border-indigo-700/60 font-mono text-indigo-300">NetSec</span>
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    <span className="text-[9px] px-2 py-0.5 rounded bg-blue-900/40 border border-blue-700/40 font-mono text-blue-300">Data Analytics</span>
+                    <span className="text-[9px] px-2 py-0.5 rounded bg-cyan-900/40 border border-cyan-700/40 font-mono text-cyan-300">AEO / GEO</span>
+                    <span className="text-[9px] px-2 py-0.5 rounded bg-indigo-900/40 border border-indigo-700/40 font-mono text-indigo-300">NetSec</span>
                   </div>
                 </div>
 
               </div>
               
               {/* Highlight shimmer */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/30 rounded-3xl pointer-events-none transition-all duration-500" />
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/30 rounded-3xl pointer-events-none z-30 transition-all duration-500" />
             </div>
 
             {/* Micro background widgets */}

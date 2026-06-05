@@ -45,156 +45,247 @@ export default function CvModal({ onClose }: CvModalProps) {
         </div>
 
         {/* CV Render Body */}
-        <div className="p-8 sm:p-12 max-h-[80vh] overflow-y-auto space-y-8 text-left font-sans print:max-h-none print:overflow-visible">
+        <div className="p-8 sm:p-12 max-h-[85vh] overflow-y-auto space-y-8 text-left font-sans print:max-h-none print:overflow-visible">
           
           {/* Header metadata */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start pb-6 border-b border-slate-200">
-            <div className="md:col-span-8 space-y-2">
-              <h1 className="text-3xl font-display font-black tracking-tight text-slate-950">
-                Evans Abura Ojuang'
-              </h1>
-              <p className="text-sm font-semibold text-blue-700 uppercase tracking-wider font-mono">
-                Data Analyst | Research Consultant | Cisco Network Specialist
-              </p>
-              <p className="text-xs text-slate-500 max-w-xl font-sans">
-                Highly focused Technology Graduate (B.Tech CCN) specialized in building secure networked data models, executing field survey diagnostics for humanitarian relief organizations, and optimizing digital search visibility for generative answer engines.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-6 border-b border-slate-200">
+            
+            {/* Portrait Image inside CV */}
+            <div className="md:col-span-3 flex justify-center md:justify-start">
+              <div className="w-28 h-28 rounded-2xl overflow-hidden border border-slate-200 shadow-sm shrink-0">
+                <img
+                  src="/src/assets/images/evans_portrait_1780654631283.png"
+                  alt="Evans Abura Ojuang'"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
 
-            <div className="md:col-span-4 space-y-1.5 pt-2 text-xs text-slate-600 md:border-l md:border-slate-100 md:pl-6 font-mono">
-              <p className="flex items-center">
-                <Mail className="w-3.5 h-3.5 mr-2 text-blue-600" />
-                <span>evansabura1@gmail.com</span>
+            <div className="md:col-span-9 space-y-2">
+              <h1 className="text-3xl font-display font-black tracking-tight text-slate-950">
+                EVANS ABURA OJUANG'
+              </h1>
+              <p className="text-sm font-semibold text-blue-700 uppercase tracking-wider font-mono">
+                DATA ANALYST | RESEARCH CONSULTANT | NETWORK PROFESSIONAL
               </p>
-              <p className="flex items-center">
-                <Phone className="w-3.5 h-3.5 mr-2 text-blue-600" />
-                <span>+254 797 229 924</span>
-              </p>
-              <p className="flex items-center">
-                <MapPin className="w-3.5 h-3.5 mr-2 text-blue-600" />
-                <span>Nairobi, Kenya</span>
-              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 pt-2 text-xs text-slate-600 font-mono">
+                <p className="flex items-center">
+                  <Mail className="w-3.5 h-3.5 mr-2 text-blue-600" />
+                  <span>evansabura1@gmail.com</span>
+                </p>
+                <p className="flex items-center">
+                  <Phone className="w-3.5 h-3.5 mr-2 text-blue-600" />
+                  <span>+254 797 229 924</span>
+                </p>
+                <p className="flex items-center">
+                  <MapPin className="w-3.5 h-3.5 mr-2 text-blue-600" />
+                  <span>Nairobi, Kenya</span>
+                </p>
+                <p className="flex items-center">
+                  <ExternalLink className="w-3.5 h-3.5 mr-2 text-blue-600" />
+                  <span className="truncate">linkedin.com/in/evans-abura-a1b69a206/</span>
+                </p>
+              </div>
             </div>
+          </div>
+
+          {/* Professional Summary */}
+          <div className="space-y-2.5">
+            <h3 className="font-display font-bold text-xs uppercase tracking-widest text-slate-400 border-b border-slate-100 pb-1 font-mono">
+              Professional Summary
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
+              Data Analyst and IT professional with experience in technical support, data analysis, research, SEO & AI SEO, and network solutions. I help organizations transform data into actionable insights, optimize digital visibility, and ensure secure, reliable IT operations.
+            </p>
           </div>
 
           {/* Core Skills segment */}
           <div className="space-y-4">
             <h3 className="font-display font-bold text-xs uppercase tracking-widest text-slate-400 border-b border-slate-100 pb-1 font-mono">
-              I. CORE INTELLECTUAL toolkit
+              Core Skills & Tools
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs sm:text-sm">
               <div className="space-y-1.5">
                 <h4 className="font-bold text-slate-800 flex items-center">
-                  <Database className="w-4.5 h-4.5 mr-1.5 text-blue-600" />
-                  Analytics & Data Science
+                  <Database className="w-4 h-4 mr-1.5 text-blue-600 font-bold" />
+                  Data & Research
                 </h4>
-                <p className="text-slate-500 leading-relaxed text-xs">
-                  Advanced Data Cleaning, Power BI Modeling (DAX), Python Programming (Pandas/NumPy), SQL Database Solutions, KPI Dashboard Structuring.
-                </p>
+                <ul className="space-y-1 text-slate-500 text-xs list-disc pl-4">
+                  <li>Data Analysis & Visualization</li>
+                  <li>Research & Survey Analysis</li>
+                  <li>Data Management & Reporting</li>
+                  <li>Python, SQL, Excel, Power BI, SPSS</li>
+                </ul>
               </div>
 
               <div className="space-y-1.5">
                 <h4 className="font-bold text-slate-800 flex items-center">
-                  <Search className="w-4.5 h-4.5 mr-1.5 text-blue-600" />
-                  SEO & Generative (GEO/AEO)
+                  <Search className="w-4 h-4 mr-1.5 text-blue-600 font-bold" />
+                  SEO & AI SEO
                 </h4>
-                <p className="text-slate-500 leading-relaxed text-xs">
-                  Generative Engine Optimization (GEO/LLMO), Answer Engine Optimization (AEO), Schema Markups (JSON-LD), Entity-Based Strategy.
-                </p>
+                <ul className="space-y-1 text-slate-500 text-xs list-disc pl-4">
+                  <li>SEO & AI SEO (AEO, GEO, LLMO)</li>
+                  <li>Technical SEO & Schema markup</li>
+                  <li>Google Analytics & Web Console</li>
+                  <li>ChatGPT & Generative AI Tools</li>
+                </ul>
               </div>
 
               <div className="space-y-1.5">
                 <h4 className="font-bold text-slate-800 flex items-center">
-                  <Network className="w-4.5 h-4.5 mr-1.5 text-blue-600" />
-                  Cisco Networking & Security
+                  <Network className="w-4 h-4 mr-1.5 text-blue-600 font-bold" />
+                  Networking & IT Support
                 </h4>
-                <p className="text-slate-500 leading-relaxed text-xs">
-                  VLAN routing setup, QoS latency optimization, Hardware maintenance, client support logs, Dual-WAN backup protocols.
-                </p>
+                <ul className="space-y-1 text-slate-500 text-xs list-disc pl-4">
+                  <li>Network Administration</li>
+                  <li>IT Support & Troubleshooting</li>
+                  <li>Cisco Packet Tracer, Wireshark</li>
+                  <li>Hardware & Systems Configuration</li>
+                </ul>
               </div>
             </div>
           </div>
 
-          {/* Education & Academic degrees */}
-          <div className="space-y-4">
+          {/* Employment History */}
+          <div className="space-y-5">
             <h3 className="font-display font-bold text-xs uppercase tracking-widest text-slate-400 border-b border-slate-100 pb-1 font-mono">
-              II. Academic Foundations
+              Employment History
+            </h3>
+
+            <div className="space-y-6">
+              
+              {/* IT Support Executive */}
+              <div className="space-y-1.5 text-xs sm:text-sm">
+                <div className="flex justify-between font-display font-bold text-slate-900">
+                  <h4 className="text-slate-950 font-bold">IT Support Executive</h4>
+                  <span className="text-slate-400 font-mono text-xs">Aug 2025 – Present (8 mos)</span>
+                </div>
+                <p className="text-blue-700 font-semibold text-xs tracking-tight">Daima Content</p>
+                <ul className="text-slate-500 text-xs list-disc pl-4 space-y-1 mt-1 leading-relaxed">
+                  <li>Provide executive-level IT support and system administration.</li>
+                  <li>Manage user accounts, permissions, and security compliance.</li>
+                  <li>Monitor and maintain network infrastructure for optimal performance.</li>
+                  <li>Coordinate with teams to implement IT solutions and improvements.</li>
+                </ul>
+              </div>
+
+              {/* Junior IT Support */}
+              <div className="space-y-1.5 text-xs sm:text-sm">
+                <div className="flex justify-between font-display font-bold text-slate-900">
+                  <h4 className="text-slate-950 font-bold">Junior IT Support</h4>
+                  <span className="text-slate-400 font-mono text-xs">Feb 2025 – Jul 2025 (6 mos)</span>
+                </div>
+                <p className="text-blue-700 font-semibold text-xs tracking-tight">Daima Content</p>
+                <ul className="text-slate-500 text-xs list-disc pl-4 space-y-1 mt-1 leading-relaxed">
+                  <li>Provided technical support and resolved IT issues for end-users.</li>
+                  <li>Installed, configured, and maintained computer systems and peripherals.</li>
+                  <li>Assisted in network monitoring and basic troubleshooting.</li>
+                </ul>
+              </div>
+
+              {/* Research Assistant */}
+              <div className="space-y-1.5 text-xs sm:text-sm">
+                <div className="flex justify-between font-display font-bold text-slate-900">
+                  <h4 className="text-slate-950 font-bold">Research Assistant</h4>
+                  <span className="text-slate-400 font-mono text-xs">Aug 2024 – Jan 2025</span>
+                </div>
+                <p className="text-blue-700 font-semibold text-xs tracking-tight">CARE International Kenya</p>
+                <ul className="text-slate-500 text-xs list-disc pl-4 space-y-1 mt-1 leading-relaxed">
+                  <li>Conducted data analysis and survey research for the SHE SOARS project.</li>
+                  <li>Prepared reports that informed project decisions and outcomes.</li>
+                </ul>
+              </div>
+
+              {/* IT & MOS Trainee */}
+              <div className="space-y-1.5 text-xs sm:text-sm">
+                <div className="flex justify-between font-display font-bold text-slate-900">
+                  <h4 className="text-slate-950 font-bold">IT & MOS Trainee</h4>
+                  <span className="text-slate-400 font-mono text-xs">Mar 2024 – Jun 2024</span>
+                </div>
+                <p className="text-blue-700 font-semibold text-xs tracking-tight">MAS Intimates Kenya (MAS Holdings)</p>
+                <ul className="text-slate-500 text-xs list-disc pl-4 space-y-1 mt-1 leading-relaxed">
+                  <li>Assisted with data management and process improvements.</li>
+                  <li>Supported documentation, reporting, and workflow optimization.</li>
+                </ul>
+              </div>
+
+              {/* Mentor, SHE SOARS Program */}
+              <div className="space-y-1.5 text-xs sm:text-sm">
+                <div className="flex justify-between font-display font-bold text-slate-900">
+                  <h4 className="text-slate-950 font-bold">Mentor, SHE SOARS Program</h4>
+                  <span className="text-slate-400 font-mono text-xs">Feb 2022 – Jul 2024</span>
+                </div>
+                <p className="text-blue-700 font-semibold text-xs tracking-tight">HOPE Worldwide Kenya</p>
+                <ul className="text-slate-500 text-xs list-disc pl-4 space-y-1 mt-1 leading-relaxed">
+                  <li>Mentored young women in SRHR topics.</li>
+                  <li>Facilitated workshops and built confidence in participants.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Education & Academic degrees */}
+          <div className="space-y-3">
+            <h3 className="font-display font-bold text-xs uppercase tracking-widest text-slate-400 border-b border-slate-100 pb-1 font-mono">
+              Academic Foundations
             </h3>
             
             <div className="flex flex-col sm:flex-row justify-between items-start text-xs sm:text-sm">
-              <div className="space-y-1 text-left">
+              <div className="space-y-0.5 text-left">
                 <h4 className="font-bold text-slate-900">
-                  Bachelor of Technology (B.Tech) in Communication & Computer Networks
+                  Bachelor of Technology in Communication and Computer Networks
                 </h4>
                 <p className="text-slate-600 text-xs">
-                  Technical University of Kenya (TUK) | Graduated with specialized training in Cryptography & Routing.
+                  Technical University of Kenya | 2021 – 2024
                 </p>
               </div>
               <span className="text-slate-400 font-bold font-mono text-xs sm:text-right pt-1 sm:pt-0">Nairobi, Kenya</span>
             </div>
           </div>
 
-          {/* Professional experience lists */}
+          {/* Certifications and Training */}
           <div className="space-y-4">
             <h3 className="font-display font-bold text-xs uppercase tracking-widest text-slate-400 border-b border-slate-100 pb-1 font-mono">
-              III. Employment History
-            </h3>
-
-            <div className="space-y-5">
-              
-              <div className="space-y-1.5 text-xs sm:text-sm">
-                <div className="flex justify-between font-display font-bold text-slate-900">
-                  <h4>Research Assistant & Field Data Representative</h4>
-                  <span className="text-slate-400 font-mono text-xs">May 2024 - Present</span>
-                </div>
-                <p className="text-blue-700 font-semibold text-xs uppercase tracking-tight">CARE International Kenya (SHE SOARS)</p>
-                <p className="text-slate-500 leading-relaxed text-xs">
-                  Administered detailed surveys and oversaw quantitative data ingestion and verification across rural demographic zones. Crafted custom digitized templates on KoboToolbox and structured indicator models to inform global sponsorship partners.
-                </p>
-              </div>
-
-              <div className="space-y-1.5 text-xs sm:text-sm">
-                <div className="flex justify-between font-display font-bold text-slate-900">
-                  <h4>Junior IT Support Technician</h4>
-                  <span className="text-slate-400 font-mono text-xs">Nov 2023 - May 2024</span>
-                </div>
-                <p className="text-blue-700 font-semibold text-xs uppercase tracking-tight">Daima Connect</p>
-                <p className="text-slate-500 leading-relaxed text-xs">
-                  Configured routers, switches, and client gateways. Automated corporate system backup storage routines and monitored local client security rules, reducing down-time issues by 30%.
-                </p>
-              </div>
-
-              <div className="space-y-1.5 text-xs sm:text-sm">
-                <div className="flex justify-between font-display font-bold text-slate-900">
-                  <h4>IT Support and Operations Trainee</h4>
-                  <span className="text-slate-400 font-mono text-xs">Jun 2023 - Nov 2023</span>
-                </div>
-                <p className="text-blue-700 font-semibold text-xs uppercase tracking-tight">MAS Intimates Kenya</p>
-                <p className="text-slate-500 leading-relaxed text-xs">
-                  Generated operational reports monitoring factory-level lean metrics inside advanced spreadsheet systems. Maintained active LAN hardware loops and resolved general office technical tickets.
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          {/* Certifications badges list */}
-          <div className="space-y-4">
-            <h3 className="font-display font-bold text-xs uppercase tracking-widest text-slate-400 border-b border-slate-100 pb-1 font-mono">
-              IV. Specialized Certifications
+              Certifications & Training
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-              {certificationsData.map((cert) => (
-                <div key={cert.id} className="flex items-center space-x-2 p-2 rounded-lg bg-slate-50 border border-slate-100">
-                  <Award className="w-4 h-4 text-blue-600 shrink-0" />
+              {[
+                { title: "Cisco IT Essentials", org: "Cisco Academy" },
+                { title: "Cisco Networking Basics", org: "Cisco Academy" },
+                { title: "Cisco Cybersecurity Basics", org: "Cisco Academy" },
+                { title: "IBM AI Fundamentals", org: "IBM" },
+                { title: "Google Data Analytics", org: "Google" },
+                { title: "Power BI Data Analyst", org: "Microsoft" }
+              ].map((cert, index) => (
+                <div key={index} className="flex items-center space-x-2.5 p-2 rounded-xl bg-slate-50 border border-slate-100">
+                  <Award className="w-4 h-4 text-blue-600 shrink-0 font-bold" />
                   <div>
                     <span className="font-semibold block text-slate-800 leading-tight">{cert.title}</span>
-                    <span className="text-[10px] text-slate-400 font-mono block mt-0.5">{cert.organization} ({cert.year})</span>
+                    <span className="text-[10px] text-slate-400 font-mono block mt-0.5">{cert.org}</span>
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Languages & Passion grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 text-xs">
+            <div>
+              <h4 className="font-mono font-bold uppercase tracking-wider text-slate-400 border-b border-slate-100 pb-1 mb-2">Languages</h4>
+              <p className="text-slate-600 leading-relaxed font-sans mt-1">
+                <strong className="text-slate-800">English:</strong> Fluent / Native Speaker &bull; <strong className="text-slate-800">German:</strong> Proficient
+              </p>
+            </div>
+            <div>
+              <h4 className="font-mono font-bold uppercase tracking-wider text-slate-400 border-b border-slate-100 pb-1 mb-2">Passion & Objective</h4>
+              <p className="text-slate-600 leading-relaxed font-sans mt-1">
+                I am passionate about leveraging technology and data to solve real-world problems, improve business outcomes, and create measurable impact.
+              </p>
             </div>
           </div>
 

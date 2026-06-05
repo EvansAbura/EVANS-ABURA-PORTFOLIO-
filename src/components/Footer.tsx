@@ -84,7 +84,7 @@ export default function Footer() {
 
           <div className="flex items-center space-x-3.5">
             <a
-              href="https://www.linkedin.com/in/evans-abura-7431261ba"
+              href="https://www.linkedin.com/in/evans-abura-a1b69a206/"
               target="_blank"
               referrerPolicy="no-referrer"
               className="p-2 bg-slate-900 border border-slate-800 text-slate-400 hover:text-white rounded-lg hover:border-blue-500/40 transition-all cursor-pointer"
@@ -93,7 +93,7 @@ export default function Footer() {
               <Linkedin className="w-4 h-4" />
             </a>
             <a
-              href="https://github.com/EvansAbura"
+              href="https://github.com/evansabura"
               target="_blank"
               referrerPolicy="no-referrer"
               className="p-2 bg-slate-900 border border-slate-800 text-slate-400 hover:text-white rounded-lg hover:border-slate-700 transition-all cursor-pointer"
