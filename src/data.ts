@@ -367,24 +367,43 @@ In my capstone project, **Quantum Guardian**, we extended this basic model by in
 
 export const testimonialsData = [
   {
-    name: "Dr. Linet Okoth",
-    role: "Senior Project Evaluator",
-    organization: "CARE International Programs",
-    content: "Evans demonstrated stellar technical organization throughout our field survey campaigns. His digital KoboToolbox templates were flawlessly structured, and his ability to scrub and model data allowed our project team to spot demographic trends weeks faster than scheduled.",
-    avatarText: "LO"
+    name: "Isaac Karanja",
+    role: "Research Manager",
+    organization: "CARE International Kenya",
+    content: "Working with Evans during his research assignments for CARE Kenya was a major highlight. He demonstrated exceptional quantitative and qualitative data collection skills, utilizing complex CAPI tools like ODK and KoboCollect with maximum precision. His meticulous field data verification and data cleaning pipelines directly elevated our SHE SOARS project's data integrity. He is a highly reliable, adaptive professional who thrives under minimal supervision.",
+    avatarText: "IK",
+    avatarColor: "bg-orange-950 border-orange-700 text-orange-300",
+    companyLogo: "CARE",
+    companyLogoColor: "text-orange-500"
+  },
+  {
+    name: "Joyce Muriithi",
+    role: "SHE SOARS Project Officer",
+    organization: "HOPE Worldwide Kenya",
+    content: "Evans has been an outstanding Mentor and Community Field Facilitator for our SHE SOARS Project. He brought wonderful dedication, leading community mobilization, stakeholder liaison, and capacity building sessions. His technical skill in monitoring and structured data collection was invaluable for compiling project feedback reports. His outstanding interpersonal skills make him an asset to any team.",
+    avatarText: "JM",
+    avatarColor: "bg-blue-950 border-blue-700 text-blue-300",
+    companyLogo: "HWWK",
+    companyLogoColor: "text-blue-500"
+  },
+  {
+    name: "Chinthana Thanthirige",
+    role: "GM - Administration",
+    organization: "MAS Intimates Kenya",
+    content: "Evans successfully completed his attachment in our Plant Lean Enterprise, demonstrating a rare blend of technical skill, intelligence, and exemplary work ethic. He adapted smoothly to our high-pressure manufacturing environment, identifying key process waste vectors and boosting our operational summary report workflow speeds. I highly recommend him or any team seeking high-caliber talent.",
+    avatarText: "CT",
+    avatarColor: "bg-emerald-950 border-emerald-700 text-emerald-300",
+    companyLogo: "MAS",
+    companyLogoColor: "text-emerald-500"
   },
   {
     name: "Dennis Maina",
-    role: "Director of Infrastructure Support",
+    role: "Director of Infrastructure",
     organization: "Daima Connect",
-    content: "A rare technology talent who thoroughly understands both IT systems and network engineering. Evans streamlined our security routines, restructured our local client backup scripts and routers, and left us with pristine network flow documentations.",
-    avatarText: "DM"
-  },
-  {
-    name: "Sarah Wanjiku",
-    role: "Co-Founder",
-    organization: "Apex Enterprise Logistics",
-    content: "The custom Power BI interactive dashboard Evans constructed transformed how we track transport delays. He cleaned up years of chaotic spreadsheets and structured a unified relational view that is now the backbone of our operational reviews.",
-    avatarText: "SW"
+    content: "Evans is an exceptional IT support specialist. In his tenure, his network troubleshooting, router setups, and system administration were stellar. He secured stable client connectivity and could explain complex technical solutions clearly and professionally. An absolute pleasure to work with.",
+    avatarText: "DM",
+    avatarColor: "bg-indigo-950 border-indigo-700 text-indigo-300",
+    companyLogo: "DC",
+    companyLogoColor: "text-indigo-500"
   }
 ];

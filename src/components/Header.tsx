@@ -28,6 +28,7 @@ export default function Header({ darkMode, setDarkMode }: HeaderProps) {
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
     { label: "Experience", href: "#experience" },
+    { label: "Credentials", href: "#credentials" },
     { label: "Services", href: "#services" },
     { label: "Blog", href: "#blog" },
     { label: "Contact", href: "#contact" },

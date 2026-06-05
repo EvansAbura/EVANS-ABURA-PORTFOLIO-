@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Certifications from "./components/Certifications";
+import CredentialsHub from "./components/CredentialsHub";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Blog from "./components/Blog";
@@ -62,6 +63,8 @@ export default function App() {
         <Experience />
 
         <Certifications />
+
+        <CredentialsHub />
 
         <Services onSelectService={handleSelectService} />
 

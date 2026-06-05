@@ -54,7 +54,7 @@ export default function CvModal({ onClose }: CvModalProps) {
             <div className="md:col-span-3 flex justify-center md:justify-start">
               <div className="w-28 h-28 rounded-2xl overflow-hidden border border-slate-200 shadow-sm shrink-0">
                 <img
-                  src="/src/assets/images/evans_portrait_1780654631283.png"
+                  src="/src/assets/images/evans_portrait_red.jpg"
                   alt="Evans Abura Ojuang'"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -163,7 +163,7 @@ export default function CvModal({ onClose }: CvModalProps) {
                   <h4 className="text-slate-950 font-bold">IT Support Executive</h4>
                   <span className="text-slate-400 font-mono text-xs">Aug 2025 – Present (8 mos)</span>
                 </div>
-                <p className="text-blue-700 font-semibold text-xs tracking-tight">Daima Content</p>
+                <p className="text-blue-700 font-semibold text-xs tracking-tight">Daima Connect</p>
                 <ul className="text-slate-500 text-xs list-disc pl-4 space-y-1 mt-1 leading-relaxed">
                   <li>Provide executive-level IT support and system administration.</li>
                   <li>Manage user accounts, permissions, and security compliance.</li>
@@ -178,7 +178,7 @@ export default function CvModal({ onClose }: CvModalProps) {
                   <h4 className="text-slate-950 font-bold">Junior IT Support</h4>
                   <span className="text-slate-400 font-mono text-xs">Feb 2025 – Jul 2025 (6 mos)</span>
                 </div>
-                <p className="text-blue-700 font-semibold text-xs tracking-tight">Daima Content</p>
+                <p className="text-blue-700 font-semibold text-xs tracking-tight">Daima Connect</p>
                 <ul className="text-slate-500 text-xs list-disc pl-4 space-y-1 mt-1 leading-relaxed">
                   <li>Provided technical support and resolved IT issues for end-users.</li>
                   <li>Installed, configured, and maintained computer systems and peripherals.</li>

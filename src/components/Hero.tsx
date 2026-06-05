@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Award, ArrowRight, Download, Mail, Network, Search, Database } from "lucide-react";
 
 interface HeroProps {
@@ -5,6 +6,14 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenCvModal }: HeroProps) {
+  const [portraitStyle, setPortraitStyle] = useState<"red" | "standing" | "ai">("red");
+
+  const getPortraitSrc = () => {
+    if (portraitStyle === "red") return "/src/assets/images/evans_portrait_red.jpg";
+    if (portraitStyle === "standing") return "/src/assets/images/evans_standing.jpg";
+    return "/src/assets/images/evans_portrait_1780654631283.png";
+  };
+
   return (
     <section
       id="home"
@@ -112,14 +121,48 @@ export default function Hero({ onOpenCvModal }: HeroProps) {
               {/* Professional portrait image with tech overlays */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src="/src/assets/images/evans_portrait_1780654631283.png"
+                  src={getPortraitSrc()}
                   alt="Evans Abura Ojuang'"
                   referrerPolicy="no-referrer"
+                  width="420"
+                  height="525"
+                  loading="eager"
+                  // @ts-ignore
+                  fetchPriority="high"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 
                 {/* Elegant overlay gradient to make text highly legible */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-slate-950/10 z-10" />
+              </div>
+
+              {/* Dynamic Portrait selector overlay */}
+              <div className="absolute top-16 right-4 z-30 flex flex-col space-y-2 pointer-events-auto bg-slate-950/70 backdrop-blur-md p-2 rounded-xl border border-slate-800/60 shadow-lg">
+                <p className="text-[8px] font-mono font-bold text-slate-400 uppercase tracking-wider text-left border-b border-slate-800 pb-1 mb-1">
+                  Photo Switcher
+                </p>
+                <div className="flex flex-col gap-1.5">
+                  <button
+                    onClick={() => setPortraitStyle("red")}
+                    className={`px-2 py-1 rounded text-[9px] font-mono font-bold text-left tracking-wide transition-all ${
+                      portraitStyle === "red" 
+                        ? "bg-blue-600 text-white" 
+                        : "text-slate-400 hover:text-slate-100 hover:bg-slate-900"
+                    }`}
+                  >
+                    🔴 Studio Portrait
+                  </button>
+                  <button
+                    onClick={() => setPortraitStyle("standing")}
+                    className={`px-2 py-1 rounded text-[9px] font-mono font-bold text-left tracking-wide transition-all ${
+                      portraitStyle === "standing" 
+                        ? "bg-blue-600 text-white" 
+                        : "text-slate-400 hover:text-slate-100 hover:bg-slate-900"
+                    }`}
+                  >
+                    🏡 Staircase Stand
+                  </button>
+                </div>
               </div>
 
               {/* Functional Cyber elements representing Data, Security and Digital Analytics */}
