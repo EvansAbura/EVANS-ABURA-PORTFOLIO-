@@ -4,9 +4,9 @@ export default function About() {
   const experiencesGrid = [
     {
       company: "CARE International Kenya",
-      role: "Research Support & Survey Analysis",
+      role: "Research Supervision & Support",
       color: "border-blue-500",
-      description: "Implemented rigorous data verifications and quantitative analysis under SHE SOARS welfare program campaigns.",
+      description: "Supervised field research teams, audited data collection validation routines, and conducted survey analysis under she soars campaigns.",
     },
     {
       company: "MAS Intimates Kenya",
@@ -16,9 +16,9 @@ export default function About() {
     },
     {
       company: "Daima Connect",
-      role: "Junior IT Support Engineer",
+      role: "Executive IT Support Engineer",
       color: "border-indigo-500",
-      description: "Managed network configuration setups and troubleshot corporate gateways to secure seamless regional uptimes.",
+      description: "Administer high-performance corporate networks, secure database alignments, configure hardware troubleshooting parameters, and manage server security.",
     },
     {
       company: "HOPE Worldwide Kenya",

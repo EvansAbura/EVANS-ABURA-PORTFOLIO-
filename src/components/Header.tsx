@@ -30,7 +30,6 @@ export default function Header({ darkMode, setDarkMode }: HeaderProps) {
     { label: "Experience", href: "#experience" },
     { label: "Credentials", href: "#credentials" },
     { label: "Services", href: "#services" },
-    { label: "Blog", href: "#blog" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -56,7 +55,7 @@ export default function Header({ darkMode, setDarkMode }: HeaderProps) {
             </div>
             <div className="text-left">
               <h1 className="font-bold text-sm sm:text-base leading-none text-slate-900 dark:text-white">Evans Abura Ojuang'</h1>
-              <span className="text-[10px] text-slate-500 dark:text-slate-400 font-medium">Data Analyst & Research Consultant</span>
+              <span className="text-[10px] text-slate-500 dark:text-slate-400 font-semibold uppercase tracking-tight block">Executive IT Support Engineer, Research Consultant & Data Analyst</span>
             </div>
           </a>
 

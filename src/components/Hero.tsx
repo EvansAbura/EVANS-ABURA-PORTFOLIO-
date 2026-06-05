@@ -57,7 +57,7 @@ export default function Hero({ onOpenCvModal }: HeroProps) {
               
               {/* Secondary Subheading Title Roll */}
               <p className="text-lg font-display font-semibold text-slate-700 dark:text-slate-300 tracking-wide border-l-3 border-blue-600 dark:border-blue-400 pl-4">
-                Data Analyst | Research Consultant | AI Search Optimization Specialist | Network Professional
+                Executive IT Support Engineer | Data Analyst | Research Consultant | AI Search Optimization Specialist
               </p>
             </div>
 

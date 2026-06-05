@@ -158,34 +158,58 @@ export const projectsData: Project[] = [
 
 export const experienceTimeline: Experience[] = [
   {
-    id: "exp-1",
-    role: "Research Assistant & Program Support",
+    id: "exp-care-supervisor",
+    role: "Research Supervisor",
     organization: "CARE International Kenya",
-    period: "May 2024 - Present",
+    period: "May 2026 (1-Week Contract)",
     description: [
-      "Assisted in active field surveys and data validation processes under the SHE SOARS project, guaranteeing absolute precision in reproductive health and female-empowerment reporting frameworks.",
-      "Developed high-quality digitized data gathering configurations in KoboToolbox, securing flawless remote synchronization.",
+      "Supervised field research teams under programmatic assessment frameworks, enforcing strong data quality check guidelines and respondent confidentiality protocols.",
+      "Conducted daily sample validations and assisted in logical questionnaire integrity audits using online KoboToolbox datasets."
+    ],
+    tags: ["Research Supervision", "Field Surveys", "Quality Control", "CARE Kenya", "M&E Analytics"]
+  },
+  {
+    id: "exp-ex-it",
+    role: "Executive IT Support Engineer",
+    organization: "Daima Connect",
+    period: "Aug 2025 - Present",
+    description: [
+      "Provide executive-level IT systems engineering, cross-platform administration, and enterprise infrastructure management for regional corporate clients.",
+      "Oversee cloud database directories, secure user account access controls, and network security compliance matrices with zero failure record.",
+      "Audit network logs utilizing Wireshark, map firewall configurations, and handle endpoint threat detection databases.",
+      "Formulate technology optimization solutions, streamline hardware repairs diagnostic workflows, and ensure 99.9% business network availability."
+    ],
+    tags: ["Systems Administration", "Corporate Networks", "Client Management", "Cisco Solutions", "Security Compliance"]
+  },
+  {
+    id: "exp-jr-it",
+    role: "Junior IT Support Specialist",
+    organization: "Daima Connect",
+    period: "Feb 2025 - Jul 2025",
+    description: [
+      "Configured, dispatched, and supported high-performance local area network (LAN) and wireless connectivity installations.",
+      "Executed routine server configuration checks, handled database backup routines, and deployed endpoint defenses.",
+      "Delivered swift remote troubleshooting sessions, achieving a 95%+ first-point resolution rate on hardware and service tickets."
+    ],
+    tags: ["IT Helpdesk", "Backup Protocols", "Troubleshooting", "Hardware Maintenance", "Network Logistics"]
+  },
+  {
+    id: "exp-care",
+    role: "Research Assistant & Survey Support",
+    organization: "CARE International Kenya",
+    period: "Aug 2024 - Jan 2025",
+    description: [
+      "Assisted in active field surveys and data validation processes under the SHE SOARS project, guaranteeing absolute precision in reporting frameworks.",
+      "Developed high-quality digitized data gathering configurations in KoboToolbox, securing flawless remote synchronization and offline storage validations.",
       "Co-authored analytical research briefs and evidence graphs for community leaders and key international funding agencies."
     ],
     tags: ["Survey Design", "CARE Kenya", "Monitoring & Evaluation", "KoboToolbox", "Data Sourcing"]
   },
   {
-    id: "exp-2",
-    role: "Junior IT Support Engineer",
-    organization: "Daima Connect",
-    period: "Nov 2023 - May 2024",
-    description: [
-      "Configured, dispatched, and supported reliable local area and wireless networking installations across multiple client offices.",
-      "Handled rigorous server log checks, database backups, and daily endpoint threat defense monitoring.",
-      "Delivered live remote troubleshooting sessions, establishing stellar 95%+ first-contact resolution rates on hardware and service bottlenecks."
-    ],
-    tags: ["Network Configuration", "IT Helpdesk", "Backup Protocols", "Troubleshooting", "Hardware Service"]
-  },
-  {
-    id: "exp-3",
+    id: "exp-mas",
     role: "IT & MOS Support Trainee",
     organization: "MAS Intimates Kenya",
-    period: "Jun 2023 - Nov 2023",
+    period: "Mar 2024 - Jun 2024",
     description: [
       "Optimized production planning Excel sheets and internal dashboard calculations, assisting Lean Manufacturing metrics monitoring.",
       "Maintained internal computer network links, printer hubs, and access log systems, ensuring minimal shift disruptions.",
@@ -194,28 +218,16 @@ export const experienceTimeline: Experience[] = [
     tags: ["Advanced Excel", "Manufacturing IT", "VBA & Macros", "System Maintenance", "Microsoft Office"]
   },
   {
-    id: "exp-4",
+    id: "exp-hope",
     role: "Youth Programs Mentor",
-    organization: "SHE SOARS Kenya Advocacy Group",
-    period: "Jan 2024 - Present",
+    organization: "HOPE Worldwide Kenya",
+    period: "Feb 2022 - Jul 2024",
     description: [
       "Guided community-driven development projects and analytical training tutorials for peer health volunteers.",
       "Assisted in formatting research questionnaires and local survey inputs to capture marginalized user needs.",
       "Coordinated educational webinars focusing on data literacy and digital inclusion strategies for young professionals."
     ],
     tags: ["Leadership", "Advocacy Support", "Community Surveys", "Coaching", "Digital Literacy"]
-  },
-  {
-    id: "exp-5",
-    role: "Community Digital & Operations Volunteer",
-    organization: "St. Monica Catholic Church",
-    period: "Ongoing Support Since 2022",
-    description: [
-      "Managed parish digital systems, sound reinforcement lines, local database logs, and weekly outreach program materials.",
-      "Redesigned donor distribution spreadsheets and automated monthly report updates for operations transparently.",
-      "Provided digital education and basic computer setup assistance to senior parishioners and local student workshops."
-    ],
-    tags: ["Social Outreach", "Spreadsheet Management", "Audio & Media IT", "Database Logging"]
   }
 ];
 

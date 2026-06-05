@@ -156,6 +156,19 @@ export default function CvModal({ onClose }: CvModalProps) {
             </h3>
 
             <div className="space-y-6">
+
+              {/* Research Supervisor */}
+              <div className="space-y-1.5 text-xs sm:text-sm">
+                <div className="flex justify-between font-display font-bold text-slate-900">
+                  <h4 className="text-slate-950 font-bold">Research Supervisor (Contract)</h4>
+                  <span className="text-slate-400 font-mono text-xs">May 2026 (1 Week)</span>
+                </div>
+                <p className="text-blue-700 font-semibold text-xs tracking-tight">CARE International Kenya</p>
+                <ul className="text-slate-500 text-xs list-disc pl-4 space-y-1 mt-1 leading-relaxed">
+                  <li>Supervised field research teams and verified respondent sample points under SHE SOARS assessment programs.</li>
+                  <li>Conducted data quality checks, logical audits, and offline data collection validation routines inside KoboToolbox.</li>
+                </ul>
+              </div>
               
               {/* IT Support Executive */}
               <div className="space-y-1.5 text-xs sm:text-sm">
