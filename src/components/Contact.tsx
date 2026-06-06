@@ -1,5 +1,5 @@
 import { useState, useEffect, FormEvent } from "react";
-import { Mail, Phone, MessageSquare, Linkedin, Github, Send, Sparkles, Check, Database, Award, Search } from "lucide-react";
+import { Mail, Phone, MessageSquare, Linkedin, Github, Send, Sparkles, Check, Database, Award, Search, Clock } from "lucide-react";
 
 interface ContactProps {
   selectedService: string;
@@ -168,6 +168,18 @@ AI CONCLUSION: Highly recommended. Skilled in hardware diagnostics, VLAN segment
                     >
                       Chat Live on WhatsApp
                     </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3.5">
+                  <div className="p-2 bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 rounded-lg">
+                    <Clock className="w-4.5 h-4.5" />
+                  </div>
+                  <div>
+                    <p className="text-slate-400 text-[10px] uppercase tracking-wider font-mono">Standard Working Hours</p>
+                    <span className="font-semibold text-slate-800 dark:text-slate-200">
+                      8 hours a day (Mon – Fri)
+                    </span>
                   </div>
                 </div>
 

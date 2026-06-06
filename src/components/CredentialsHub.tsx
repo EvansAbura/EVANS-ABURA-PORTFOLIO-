@@ -109,11 +109,13 @@ export default function CredentialsHub() {
     }
   ];
 
-  const [selectedDocId, setSelectedDocId] = useState<string>("tuk-degree");
-  const activeDoc = documents.find(d => d.id === selectedDocId) || documents[0];
+  const [selectedDocId, setSelectedDocId] = useState<string | null>(null);
+  const activeDoc = selectedDocId ? (documents.find(d => d.id === selectedDocId) || null) : null;
 
   const handlePrint = () => {
-    window.print();
+    if (selectedDocId) {
+      window.print();
+    }
   };
 
   return (
@@ -209,7 +211,12 @@ export default function CredentialsHub() {
               </div>
               <button
                 onClick={handlePrint}
-                className="flex items-center space-x-1 px-3 py-1 bg-slate-950/80 hover:bg-slate-950 border border-slate-800 rounded-lg text-[10px] font-semibold text-slate-300 transition-colors cursor-pointer"
+                disabled={!selectedDocId}
+                className={`flex items-center space-x-1 px-3 py-1 border rounded-lg text-[10px] font-semibold transition-colors cursor-pointer ${
+                  selectedDocId 
+                    ? "bg-slate-950/80 hover:bg-slate-950 border-slate-800 text-slate-300"
+                    : "opacity-40 bg-slate-950/20 border-slate-900 text-slate-600 cursor-not-allowed"
+                }`}
               >
                 <Printer className="w-3.5 h-3.5" />
                 <span>Print Copy</span>
@@ -224,6 +231,24 @@ export default function CredentialsHub() {
               
               <div className="p-6 sm:p-10 max-h-[600px] overflow-y-auto relative z-10 custom-scrollbar print:max-h-none print:overflow-visible text-left">
                 
+                {/* Waiting State / Document Selector Prompt */}
+                {!selectedDocId && (
+                  <div className="flex flex-col items-center justify-center text-center py-20 px-6 space-y-6 min-h-[380px] sm:min-h-[480px]">
+                    <div className="p-5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 animate-pulse">
+                      <FileSearch className="w-10 h-10" />
+                    </div>
+                    <div className="space-y-2 max-w-sm">
+                      <h4 className="font-display font-black text-lg text-white">No Document Active</h4>
+                      <p className="text-xs text-slate-400 leading-relaxed font-sans">
+                        Select a certificate, transcript, recommendation letter, or clearance record from the index list on the left to securely load and view its high-fidelity verification document.
+                      </p>
+                    </div>
+                    <div className="inline-flex items-center space-x-1.5 text-[9px] font-mono font-bold text-slate-500 bg-slate-900 border border-slate-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      <span>Awaiting Target Selection</span>
+                    </div>
+                  </div>
+                )}
+
                 {/* 1. TUK DEGREE PREVIEW */}
                 {selectedDocId === "tuk-degree" && (
                   <div className="border-[12px] border-slate-800/20 p-6 sm:p-8 bg-[#fdfcf7] text-slate-900 rounded-2xl font-serif space-y-6 shadow-inner tracking-wide relative min-h-[480px]">
@@ -639,8 +664,13 @@ export default function CredentialsHub() {
 
             {/* Verification Footer Indicator */}
             <div className="flex items-center justify-between p-4 bg-slate-950/20 border border-slate-850 rounded-2xl text-[11px] text-slate-400 font-mono">
-              <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-emerald-500" /> SECURE SSL ENCRYPTED CONNECTION</span>
-              <span className="text-slate-500 uppercase tracking-wider">HASH VERIFIED</span>
+              <span className="flex items-center gap-1.5">
+                <span className={`w-2 h-2 rounded-full ${selectedDocId ? "bg-emerald-500" : "bg-amber-400 animate-pulse"}`} />
+                {selectedDocId ? "SECURE SSL ENCRYPTED CONNECTION" : "ENCRYPTED CHANNEL SECURED & ACTIVE"}
+              </span>
+              <span className="text-slate-500 uppercase tracking-wider">
+                {selectedDocId ? "HASH VERIFIED" : "STANDBY STATUS"}
+              </span>
             </div>
 
           </div>

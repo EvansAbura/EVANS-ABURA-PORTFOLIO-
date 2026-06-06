@@ -1,4 +1,4 @@
-import { X, Mail, Phone, MapPin, Award, CheckCircle, GraduationCap, Printer, Briefcase, ExternalLink, Network, Search, Database } from "lucide-react";
+import { X, Mail, Phone, MapPin, Award, CheckCircle, GraduationCap, Printer, Briefcase, ExternalLink, Network, Search, Database, Clock } from "lucide-react";
 import { certificationsData } from "../data";
 
 interface CvModalProps {
@@ -86,6 +86,10 @@ export default function CvModal({ onClose }: CvModalProps) {
                 <p className="flex items-center">
                   <ExternalLink className="w-3.5 h-3.5 mr-2 text-blue-600" />
                   <span className="truncate">linkedin.com/in/evans-abura-a1b69a206/</span>
+                </p>
+                <p className="flex items-center col-span-1 sm:col-span-2">
+                  <Clock className="w-3.5 h-3.5 mr-2 text-blue-600" />
+                  <span>Working Hours: 8 hrs / day (Mon – Fri)</span>
                 </p>
               </div>
             </div>
